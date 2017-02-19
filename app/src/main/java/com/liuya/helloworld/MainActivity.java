@@ -18,11 +18,11 @@ public class MainActivity extends AppCompatActivity {
         registListener();
     }
 
-    private void initViews() {
+    protected void initViews() {
         tv_helloworld = (TextView)findViewById(R.id.tv_helloworld);
     }
 
-    private void registListener() {
+    protected void registListener() {
         tv_helloworld.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
